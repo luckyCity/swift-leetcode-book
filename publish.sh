@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # the assignment operation
-commit_text="Update docs"
-if [ ! -z $1 ]; then
-    commit_text=$1
-fi 
+# commit_text="Update docs"
+# if [ ! -z $1 ]; then
+#     commit_text=$1
+# fi 
 
 # install the plugins and build the static site
 gitbook install && gitbook build
@@ -29,10 +29,10 @@ git add --all
 
 # commit
 # git commit -m ${commit_text}
-git commit -m "xxxx"
+git commit -m "Update docs"
 
 # push to the origin
-# git push origin gh-pages
+git push origin gh-pages
 
 # checkout to the master branch
-# git checkout master
+git checkout master
