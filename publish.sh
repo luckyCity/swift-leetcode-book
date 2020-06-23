@@ -7,8 +7,9 @@
 # fi 
 
 # install the plugins and build the static site
-gitbook install && gitbook build
+# gitbook install && gitbook build
 
+gitbook build
 # checkout to the gh-pages branch
 git checkout gh-pages
 
